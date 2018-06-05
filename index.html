@@ -1,0 +1,39 @@
+<!-- //wins is set to 0
+//losses is set to 0
+//guesses is set to 10
+//an array of all the letters is established
+//one letter is randomly selected from the array
+//player types letters to guess-guesses -1
+//if correct-wins +1
+//if incorrect, letter is added to guessed letters
+//if guesses = 0, losses +1
+//if wins or losses +1, game restarts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1>The Psychic Game</h1>
+    <hr>
+    <br>
+    <h2>Guess what letter I am thinking of...</h2>
+    <br>
+    <p>Wins: <span id="win-count"></span></p>
+    <br>
+    <p>Losses: <span id="loss-count"></span></p>
+    <br>
+    <p>Guesses Left: <span id="guess-count"></span></p>
+    <br>
+    <p>Letters Guessed so Far: <span id="guessed-letters"></span></p>
+
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
