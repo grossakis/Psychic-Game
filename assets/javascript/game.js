@@ -10,7 +10,6 @@ lossCount.textContent = losses;
 
 function newGame() {
     var mysteryLetter = letterArray[Math.floor(Math.random()*letterArray.length)];
-    console.log(mysteryLetter)
     var guesses = 10;
     var guessedLetters = document.getElementById("guessed-letters");
     var remainingGuess = document.getElementById("guess-count");
@@ -39,13 +38,13 @@ function newGame() {
         remainingGuess.textContent = guesses;
         
         if(letterGuess === mysteryLetter){
-            alert("You Win!");
+            alert("You Win! My letter was " + mysteryLetter);
             wins++;
             winCount.textContent = wins;
             document.getElementById("guessed-letters").innerHTML = "";
             newGame();
         } else if(guesses < 1){
-            alert("You Lose :(");
+            alert("You Lose :( My letter was " + mysteryLetter);
             losses++;
             lossCount.textContent = losses;
             document.getElementById("guessed-letters").innerHTML = "";
